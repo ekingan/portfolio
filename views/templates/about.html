@@ -1,0 +1,55 @@
+<script>
+	$( document ).ready(function() {
+    var heights = $(".same-height").map(function() {
+        return $(this).height();
+    }).get(),
+
+    maxHeight = Math.max.apply(null, heights);
+
+    $(".same-height").height(maxHeight);
+});
+</script>
+<div class="background"></div>
+<div class="container">
+	<div class="row">
+		<div class="col-md-2">
+			<h4> About Me </h4>
+		</div>
+		<div class="col-md-10">
+			<div class="well">
+				I am a passionate, fullstack web developer in search of new and exciting opportunities in this growing and changing field.
+				I arrive here after 10 years of running a small accounting business, and 20 years of working as a professional musician.
+				I was ready for a change and wanted to grow into a new career that combined my creativity with my logic and problem solving skills and my love of languages.
+				After completing a 12 week intensive course at General Assembly in San Francisco I am certain that I have found my place. <br>
+				Please be in touch! 
+				- Emily
+				 <a href="mailto:ekingan@gmail.com"> | ekingan@gmail.com | </a>
+			</div>
+		</div>	
+	</div>
+	<div class="row">
+		<div class="col-md-2" align="left">
+			<h4> Highlights </h4>
+		</div>
+		<div class="col-md-5">
+			<div class="well same-height">
+				<h4>Drummer, Producer, Manager</h4>
+				<h5><a href="http://www.loversarelovers.com/" target="_blank">Lovers</h5></a>
+				<h6>Video - Boxer</h6>
+				<iframe width="380" height="235" src="https://www.youtube.com/embed/yyICPO6jbr4" frameborder="0" allowfullscreen></iframe> 
+				<br>
+				<h6>Audio - Tiger Square</h6>
+				<iframe width="100%" height="130" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/101518856&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
+			</div>
+		</div>
+		<div class="col-md-5">
+			<div class="well same-height">
+				<h4>Founder, Accountant</h4>
+				<h5><a href="http://mathllc.com/" target="_blank">Math LLC</h5></a> 
+				<h6>specializing in tax prep for creatives</h6>
+				<img src="/img/math.png" alt="">
+			</div>
+		</div>
+	</div>
+			
+</div>

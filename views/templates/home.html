@@ -1,0 +1,64 @@
+<script>
+	$( document ).ready(function() {
+    var heights = $(".same-height").map(function() {
+        return $(this).height();
+    }).get(),
+
+    maxHeight = Math.max.apply(null, heights);
+
+    $(".same-height").height(maxHeight);
+});
+</script>
+<div class="background"></div>
+<div class="container-fluid">
+<div class="row">
+		<h4 align="center">Recent Projects</h4>	<br>
+</div>
+	<div class="row">
+			<div class="col-md-4">
+				<div class="well same-height">
+				<h4>xFitFinder</h4>
+				<img src="/img/xfitfinder.png">
+				<a href="https://www.xfitfinder.com"><h5>xfitfinder.com</h5></a>
+				xFitFinder is a tool for researching, reviewing, and rating Crossfit affliates all over the world.
+				The app features a 5-star system so users can rate each affiliate in the 4 different categories most important
+				to Crossfit athletes. 
+				<details>
+					<summary>
+						Technologies
+					</summary>
+					Ruby on Rails, PostgreSQL, Heroku
+				</details>
+
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="well same-height">
+					<h4>Savit</h4>
+				<img src="/img/savit.png">
+				<a href="https://www.savitapp.herokuapp.com"><h5>savitapp.herokuapp.com</h5></a>
+				Designed to make saving money fun and easy, Savit allows users to create a budget, record spending, and review their savings daily.
+				Mobile ready, users can track their spending on the fly. <br>
+				<details>
+					<summary>
+						Technologies
+					</summary>Ruby on Rails, Javascript, jQuery, PostgreSQL</details>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="well same-height">
+					<h4>Gather-it</h4>
+				<img src="/img/gather.png">
+				<a href="https://www.gather-it.herokuapp.com"><h5>gather-it.herokuapp.com</h5></a>
+				Create a shopping list that tracks purchases so that food will be eaten while fresh. Frequently purchased items reappear on the list automatically. Search for recipies using the food you have, prioritizing ingredients that expire first.
+				<details>
+					<summary>
+						Technologies
+					</summary>
+					Javascript, jQuery, MongoDB, Express, API
+				</details>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,133 @@
+<script>
+	$( document ).ready(function() {
+    var heights = $(".same-height").map(function() {
+        return $(this).height();
+    }).get(),
+
+    maxHeight = Math.max.apply(null, heights);
+
+    $(".same-height").height(maxHeight);
+});
+</script>
+<div class="background"></div>
+<div class="container">
+<div class="row" align="left">
+	<div class="col-md-1">
+		<h4>Skills</h4>
+	</div>
+		<div class="col-md-2 col-md-offset-1">
+			<div class="well same-height">
+				<strong>Languages: </strong><br>
+				 Ruby <br>
+				 Javascript <br>
+				 HTML5 <br>
+				 CSS <br>
+				 SQL <br>
+				 Portuguese <br>
+				 Spanish
+			</div>
+		</div>
+		<div class="col-md-2">
+			<div class="well same-height">
+				<strong> Frameworks: </strong><br>
+				 Rails <br>
+				 Node.js <br>
+				 Express <br>
+				 AngularJS
+			</div>
+		</div>	
+		<div class="col-md-2">
+			<div class="well same-height">
+				<strong> Databases: </strong><br>
+				PostgreSQL <br>
+				 MongoDB <br>
+				 Mongoose <br>
+				 ActiveRecord  <br>
+				 Parse
+			</div>
+		</div>
+		<div class="col-md-2">
+			<div class="well same-height">
+				<strong> Technologies: </strong><br>
+				jQuery <br>
+				 AJAX <br>
+				 JSON <br>
+				 APIs<br>
+				 Rspec <br>
+				 Bootstrap <br>
+				 Heroku <br>
+				 Github
+			</div>
+		</div>
+	</div>
+	<div class="row" align="left">
+		<div class="col-md-2">
+			<h4>Experience</h4>
+		</div>
+		<div class="col-md-8">
+			<div class="well">
+				<div align="left">
+				<strong>Full Stack Web Developer – General Assembly, San Francisco – Sept–Dec 2015</strong><br>
+				I completed a 12-week, intensive web development course where I learned the latest technologies used in full-stack web
+				development. Working individually, in pairs (pair programming), and on a team, I developed fully functional web
+				applications.
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="row" align="left">
+		<div class="col-md-2">
+			<h4>Education</h4>
+		</div>
+		<div class="col-md-8">
+			<div class="well">
+				<div align="left">
+				<strong>BA in Mathmatics – Reed College, Portland Oregon – 1998</strong><br>
+				<strong>Web Development Immersion - General Assembly, San Francisco, CA - 2015</strong>
+
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="row" align="left">
+		<div class="col-md-2">
+			<h4>Employment</h4>
+		</div>
+		<div class="col-md-8">
+			<div class="well">
+				<div align="left">
+				<strong>Tax Consultant, Enrolled Agent, Small Business Owner - Math LLC -  2006-Present</strong><br>
+				<ul>
+					<li>
+						Managed a team of three other accountants and 1000 clients
+					</li>
+					<li>
+						Partner in a small accounting firm providing tax prep, consulting, and bookkeeping services
+					</li>
+				</ul>
+				<strong>Co-Owner, Citybikes Worker-Owned Cooperative - 2000-2010</strong>
+					<ul>
+						<li>
+							Involved with all aspects of running a bike shop including bookkeeping, buying and managing
+							stock for two retail locations, sales and customer service, maintaining the company website,
+							and bicycle mechanics.
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="row" align="left">
+		<div class="col-md-2">
+			<h4>Interests</h4>	
+		</div>
+		
+		<div class="col-md-7">
+			<div class="well">
+				Music, languages, photography, fitness, cycling, surfing, running, social justice
+			</div>
+			
+		</div>
+	</div>
+			
+</div>
